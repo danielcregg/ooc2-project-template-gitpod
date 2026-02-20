@@ -1,54 +1,70 @@
-# Final Project
+# OOC2 Project Template (Gitpod)
 
-**Title:** Items Application Manager<br>
-**Name:** Patrick Murphy<br>
-**Student ID:** G00123456<br>
+![Java](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white)
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)
 
-## Application Function
-Discuss, in detail, what the application does. Add a screenshot image of the application in use (See example of image added below).
+A ready-to-use JavaFX project template for the Object-Oriented Computing 2 (OOC2) final project, pre-configured for Gitpod cloud development.
 
-## Running the Application
-Provide step by step instructions on how to run your applicaiton. Are there any prerequisite softwares required?
+## Overview
 
+This repository provides a starter template for OOC2 students at Atlantic Technological University (ATU). It includes a minimal JavaFX application, Gitpod configuration with a VNC-enabled workspace for GUI rendering, build scripts, and a structured README outline for project documentation. Students fork this template and build their own item management application on top of it.
+
+## Features
+
+- **JavaFX Starter App** -- A minimal "Hello World" JavaFX application to build upon
+- **Gitpod Integration** -- One-click cloud IDE with VNC desktop for GUI applications
+- **Custom Dockerfile** -- Pre-installed OpenJFX and Zulu JDK with JavaFX support
+- **Build Script** -- Shell script to compile and run the application in Gitpod
+- **Resource Directory** -- Pre-configured folder for serialization and data files
+- **README Template** -- Structured documentation outline for project submissions
+
+## Prerequisites
+
+- A GitHub account
+- A [Gitpod](https://gitpod.io) account (free tier available) or a local Java development environment
+- Java 11 or later with JavaFX support (for local development)
+
+## Getting Started
+
+### Installation
+
+**Option A -- Gitpod (Recommended):**
+
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/danielcregg/ooc2-project-template-gitpod)
+
+**Option B -- Local Clone:**
+
+```bash
+git clone https://github.com/danielcregg/ooc2-project-template-gitpod.git
+cd ooc2-project-template-gitpod
 ```
-List the instructions step by step
-    1. Clone this repository to your desktop.
-    2. Open it with Eclipse
-            :
-            :
+
+### Usage
+
+**In Gitpod:**
+
+Run the build script from the terminal:
+
+```bash
+bash buildRun.sh
 ```
-## Minimum Project Requirments
 
-Confirm and demonstrate how you have met all minimum project requirments:
+The application will compile and launch in the Gitpod VNC preview window on port 6080.
 
-* The project, including code and documentaion, will be fully contained in the provied Git Classroom repo.
-* The project must contain a working JavaFX GUI which manages items of your choice.
-* The GUI must at minimum provide access to all 7 methods implemented in the Student Manager App.
-* Methods = Load DB, Add Item, Delete Item, Find item by ID/Name, Show total items, Save to DB, Quit.
-* The code MUST compile. 30% grade reduction if code does not compile.
-* The application code must be formatted in a consistent and standard way.
-* The code must contain comments. One comment per class, method and variable at minimum.
-* There must be two commits per week minimum (Note: Should be many commits per day coding).
-* The documentation and commentary must be free of a grammar and speling mistakes.
+**Locally:**
 
-## Project Requirments above and beyond
+```bash
+javac -d bin src/ie/gmit/mypackage/*.java
+java -cp bin ie.gmit.mypackage.Main
+```
 
-Discuss any application features or design elements that show you went above and beyone basic requirments.
+## Tech Stack
 
-## Application Architecture
-Discuss in detail how the application is structured. List all Classes. List their method and what they do. Discuss what structures are used to store data objects.
+- **Language:** Java 11+
+- **GUI Framework:** JavaFX (OpenJFX)
+- **Cloud IDE:** Gitpod (VNC-enabled workspace)
+- **Container:** Custom Docker image based on `gitpod/workspace-full-vnc`
 
-Add a screenshot of the application architecture.
+## License
 
-## JavaFX
-Discuss the GUI design used. Discuss why you chose this design and any features you thing make your application stands out.
-
-![alt text](resources/javaFX.gif "My App")
-
-## Roadblocks and Unfinished Functionality
-Discuss the issues you faced with creating your application. Provide possible solutions to these issues. What would you have done differently if you had to do this again? What did you not get finished?
-
-## Resources
-Provide links to resources used:
-
-* [Tutorialspoint](https://www.tutorialspoint.com/java/) - Java Tutorials site I found helpful
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
